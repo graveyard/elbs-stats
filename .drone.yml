@@ -1,4 +1,4 @@
-image: bradrydzewski/go:1.4
+image: bradrydzewski/base
 notify:
   email:
     recipients:

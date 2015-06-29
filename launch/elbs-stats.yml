@@ -1,0 +1,13 @@
+run:
+  type: docker
+env:
+  - INFLUXDB_USER
+  - INFLUXDB_PASS
+  - INFLUXDB_DB
+  - INFLUXDB_HOST
+  - INFLUXDB_PORT
+  - AWS_ACCESS_KEY_ID
+  - AWS_SECRET_ACCESS_KEY
+resources:
+  cpu: .1
+  max_mem: .1

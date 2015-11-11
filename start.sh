@@ -9,4 +9,4 @@ sed -e "s/<INFLUXDB_USER>/$INFLUXDB_USER/" \
     -e "s/<AWS_SECRET_ACCESS_KEY>/$AWS_SECRET_ACCESS_KEY/" \
     /usr/bin/diamond.conf.template \
     > /etc/diamond/diamond.conf
-diamond -f --skip-change-user --skip-fork
+exec diamond -f --skip-change-user --skip-fork

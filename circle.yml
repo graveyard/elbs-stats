@@ -3,6 +3,9 @@ machine:
   - cd $HOME && git clone --depth 1 -v git@github.com:clever/ci-scripts.git && cd ci-scripts && git show --oneline -s
   services:
   - docker
+test:
+  override:
+  - echo "no tests"
 deployment:
   all:
     branch: master

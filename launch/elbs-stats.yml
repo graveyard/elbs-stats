@@ -11,3 +11,4 @@ env:
 resources:
   cpu: .1
   max_mem: .1
+team: eng-infra

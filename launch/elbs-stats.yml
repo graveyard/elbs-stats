@@ -1,14 +1,14 @@
 run:
   type: docker
 env:
-  - INFLUXDB_USER
-  - INFLUXDB_PASS
-  - INFLUXDB_DB
-  - INFLUXDB_HOST
-  - INFLUXDB_PORT
-  - AWS_ACCESS_KEY_ID
-  - AWS_SECRET_ACCESS_KEY
+- INFLUXDB_USER
+- INFLUXDB_PASS
+- INFLUXDB_DB
+- INFLUXDB_HOST
+- INFLUXDB_PORT
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
 resources:
-  cpu: .1
-  max_mem: .1
+  cpu: 0.0  # no CPU to improve resource usage (https://clever.atlassian.net/browse/INFRA-2120)
+  max_mem: 0.25
 team: eng-infra

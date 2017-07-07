@@ -10,5 +10,5 @@ env:
 - AWS_SECRET_ACCESS_KEY
 resources:
   cpu: 0.0  # no CPU to improve resource usage (https://clever.atlassian.net/browse/INFRA-2120)
-  max_mem: 0.25
+  max_mem: 0.1
 team: eng-infra
